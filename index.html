@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Giorgi Nareklishvili | Tip calculator app</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <card>
+      <container class="input-container">
+        <section class="input">
+          <h3>Bill</h3>
+          <input type="number" class="bill" placeholder="0" />
+        </section>
+
+        <section class="select-tip">
+          <h3>Select Tip %</h3>
+          <div class="select-btn">
+            <button>5%</button>
+            <button>10%</button>
+            <button>15%</button>
+            <button>25%</button>
+            <button>50%</button>
+            <button>Custom</button>
+          </div>
+        </section>
+
+        <section class="input">
+          <h3>Number of People</h3>
+          <input type="number" class="people" placeholder="0" />
+        </section>
+      </container>
+
+      <container class="result-container">
+        <section class="tip-amount">
+          <div class="info">Tip Amount / person</div>
+          <div class="result" id="tip" aria-placeholder="$0.00"></div>
+        </section>
+
+        <section class="total-amount">
+          <div class="info">Total / person</div>
+          <div class="result" id="total" aria-placeholder="$0.00"></div>
+        </section>
+
+        <section class="reset-section">
+          <button class="reset">RESET</button>
+        </section>
+      </container>
+    </card>
+  </body>
+</html>
