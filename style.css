@@ -1,8 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,500;1,600&family=Barlow:ital,wght@0,300;0,500;0,700;0,900;1,500;1,900&family=Chivo&family=Hanken+Grotesk:ital,wght@0,500;0,700;0,800;1,500;1,700;1,800&family=Kumbh+Sans:wght@400;700&family=Plus+Jakarta+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&family=Poppins:wght@200;400;600&family=Red+Hat+Display:wght@300;500;700;900&family=Space+Mono:wght@700&display=swap");
+@import url("@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');");
 
 body {
-  font-family: Space Mono;
-  font-style: normal;
+  font-family: "Space Mono", monospace;
   font-weight: 700;
   line-height: normal;
 
@@ -18,15 +17,13 @@ body {
   margin: auto;
 }
 
-h3 {
+label {
   color: #5e7a7d;
   font-family: Space Mono;
   font-size: 16px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
 }
-card {
+.card {
   width: 375px;
   border-radius: 25px 25px 0px 0px;
   background: #fff;
@@ -38,6 +35,22 @@ card {
   align-items: center;
   gap: 30px;
   margin: auto;
+  padding: 25px;
+}
+.input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+label,
+input,
+button {
+  font-family: "Space Mono", monospace !important;
+}
+.label {
+  margin-bottom: 10px;
 }
 .bill {
   width: 311px;
@@ -57,6 +70,7 @@ card {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  margin-top: 10px;
 }
 .select-btn button {
   width: 146.631px;
@@ -89,9 +103,12 @@ card {
   font-weight: 700;
   line-height: normal;
 }
-
+/* __________________  NUmber of people ______________ */
 .input {
   margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .people {
   width: 311px;
@@ -100,6 +117,7 @@ card {
   border-radius: 5px;
   background: #f3f9fa;
   border: none;
+  margin-top: 10px;
 }
 
 /*     <div class="result-container"> */
@@ -173,26 +191,48 @@ card {
   line-height: normal;
 }
 
-@media (min-width: 1440px) {
-  card {
+@media (min-width: 1100px) {
+  .card {
     width: 920px;
-    height: 481px;
     flex-shrink: 0;
+    border-radius: 25px 25px 25px 25px;
 
     flex-direction: row;
     gap: 0px;
+    margin: 0%;
   }
   .input-container {
     width: 379px;
-flex-shrink: 0;
-}
-.bill {
-    
-}
-
+    flex-shrink: 0;
+    gap: 20px;
+  }
+  .input {
+    gap: 10px;
+  }
+  .select-tip {
+    margin-top: 0px;
+  }
+  .input {
+    margin-top: 10px;
+  }
+  /* _______________ Result container ____________________ */
   .result-container {
     width: 413px;
     height: 417px;
     flex-shrink: 0;
+    padding: 40px;
+  }
+  .people {
+    margin-top: 0px;
+  }
+  .reset-section {
+    width: 333px;
+    height: 48px;
+    align-items: center;
+    margin: auto;
+  }
+  .reset {
+    margin: auto;
+    right: 50%;
   }
 }

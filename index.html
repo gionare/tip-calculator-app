@@ -15,6 +15,7 @@
     <title>Giorgi Nareklishvili | Tip calculator app</title>
 
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
@@ -29,15 +30,17 @@
   </head>
   <body>
     <img src="images/logo.svg" alt="" class="header">
-    <card>
-      <div class="input-container">
+    <div class="card">
+      <form class="input-container">
         <section class="input">
-          <h3>Bill</h3>
+          <div class="label">
+            <label class="label" for="bill">Bill</label>
+          </div>
           <input type="number" class="bill" placeholder="0" />
         </section>
 
         <section class="select-tip">
-          <h3>Select Tip %</h3>
+          <label class="label" for="tip">Select Tip %</label>
           <div class="select-btn">
             <button><p>5%</p></button>
             <button><p>10%</p></button>
@@ -49,10 +52,10 @@
         </section>
 
         <section class="input">
-          <h3>Number of People</h3>
-          <input type="number" class="people" placeholder="0" />
+          <label class="label" for="numberOfPeople">Number of People</label>
+          <input type="number" class="people" placeholder="1" />
         </section>
-      </div>
+      </form>
 
       <div class="result-container">
         <section class="tip-amount">
@@ -69,6 +72,6 @@
           <button class="reset">RESET</button>
         </section>
       </div>
-    </card>
+    </div>
   </body>
 </html>
