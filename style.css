@@ -52,7 +52,22 @@ button {
 .label {
   margin-bottom: 10px;
 }
-.bill {
+
+/* ______ IMAGES in input fields _______ */
+#green {
+  cursor: pointer;
+  background-image: url("images/icon-dollar.svg");
+  background-repeat: no-repeat;
+  background-position: 10px center;
+}
+#soldier {
+  cursor: pointer;
+  background-image: url("images/icon-person.svg");
+  background-repeat: no-repeat;
+  background-position: 10px center;
+}
+/* for both inputs, Bill & People */
+input {
   width: 311px;
   height: 48px;
   flex-shrink: 0;
@@ -60,6 +75,17 @@ button {
   background: #f3f9fa;
   border: none;
 }
+input {
+  color: #00474b;
+  text-align: right;
+  font-family: Space Mono;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 0 10px; 
+}
+
 /*  ____________  section class="select-tip" _____________ */
 .select-tip {
   margin-top: 30px;
@@ -79,6 +105,13 @@ button {
   border-radius: 5px;
   background: #00474b;
   border: none;
+}
+.select-btn button:hover {
+  background-color: #26c2ae;
+  cursor: pointer;
+}
+.select-btn button p:active {
+  color: orangered;
 }
 .select-btn p {
   color: #fff;
@@ -190,7 +223,7 @@ button {
   font-weight: 700;
   line-height: normal;
 }
-
+/*  ________________________________  M E D I A ______________________ */
 @media (min-width: 1100px) {
   .card {
     width: 920px;
