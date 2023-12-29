@@ -18,7 +18,7 @@
 - What's happening in script.js 
   * Im getting various DOM elements representing input fields, buttons, and result areas.
   * Variables to store values such as the bill amount, number of people, and tip percentage.
-  * Event listeners for input changes (bill and number of people) and button clicks (for    predefined tip percentages and the "Custom" button).
+  * Event listeners for input changes (bill and number of people) and button clicks (for predefined tip percentages and the "Custom" button).
   * When the bill or number of people changes, My code updates corresponding variables and logs the changes.
   * When a button is clicked, it prevents the default behavior, updates the tip amount and total, and logs the selected tip percentage.
   * There's a placeholder event for the "Custom" button click.

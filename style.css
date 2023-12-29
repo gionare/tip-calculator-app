@@ -266,5 +266,6 @@ input {
   .reset {
     margin: auto;
     right: 50%;
+    margin-bottom: 20px;
   }
 }
