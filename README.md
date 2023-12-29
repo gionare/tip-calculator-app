@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Screenshot
 
-<img src="./screenshot.jpg" alt="image preview" width="500px">
+<img src="design/desktop-design-completed.jpg" alt="image preview" width="500px">
 
 ### Links
 
