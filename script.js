@@ -38,6 +38,11 @@ peopleInput.addEventListener("input", function () {
 reset.addEventListener("click", function () {
   billInput.value = 0;
   peopleInput.value = 1;
+
+  buttons.forEach((btn) => {
+    btn.style.backgroundColor = "";
+  });
+
   customInput.value = 0;
   tipAmount.textContent = `$0.00`;
   getTotal.textContent = `$0.00`;
@@ -51,9 +56,11 @@ buttons.forEach((button) => {
     event.preventDefault();
 
     // Remove background color from all buttons
+
     buttons.forEach((btn) => {
       btn.style.backgroundColor = "";
     });
+
     // Set background color for the clicked button
     button.style.backgroundColor = "#26c2ae";
 
