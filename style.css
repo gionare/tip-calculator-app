@@ -82,7 +82,7 @@ input {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  padding: 0 10px; 
+  padding: 0 10px;
 }
 
 /*  ____________  section class="select-tip" _____________ */
@@ -104,15 +104,7 @@ input {
   border-radius: 5px;
   background: #00474b;
   border: none;
-}
-.select-btn button:hover {
-  background-color: #26c2ae;
-  cursor: pointer;
-}
-.select-btn button p:active {
-  color: orangered;
-}
-.select-btn p {
+
   color: #fff;
   text-align: center;
   font-family: Space Mono;
@@ -122,18 +114,19 @@ input {
   line-height: normal;
   margin: auto;
 }
-#Custom {
-  border-radius: 5px;
-  background: #f3f9fa;
+.select-btn button:hover {
+  background-color: #26c2ae;
+  cursor: pointer;
 }
-#Custom p {
-  color: #547878;
-  text-align: right;
-  font-family: Space Mono;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+.select-btn button p:active {
+  color: orangered;
+}
+#custom-tip {
+  width: 126px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: none;
 }
 /* __________________  NUmber of people ______________ */
 .input {
@@ -156,7 +149,7 @@ input {
 .result-container {
   /* border: solid; */
   width: 327px;
-  height: 257px;
+  height: 320px;
   flex-shrink: 0;
   border-radius: 15px;
   background-color: #00474b;
