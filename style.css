@@ -251,14 +251,13 @@ input {
     margin-top: 0px;
   }
   .reset-section {
-    width: 333px;
     height: 48px;
     align-items: center;
     margin: auto;
   }
   .reset {
     margin: auto;
-    right: 50%;
+    /* right: 50%; */
     margin-bottom: 20px;
   }
 }
